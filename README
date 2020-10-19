@@ -1,0 +1,45 @@
+Welcome to the hypersonic pretty-damn-quick modelling library! 
+Originally, HPM comes from the honours programme, master abbreviation, but I thought I could give it a new meaning now that I am done with that.
+For now, only the version for a single stagnation point is uploaded (the other will be added in the coming weeks, I am still working on some better interfaces for that). 
+
+
+The program can be run from the shell with any python compiler, but the matplotlib might not function properly.
+For functioning with matplotlib, it is best to run the program from anaconda/ spyder/ etc., so that the results can be displayed well.
+
+The HPM_main is a simple import code, but by importing of the modules, they are being executed. 
+
+
+
+
+Some modules are included in module groups to simplify the import processes. The hierarchy is below:
+
+HPM mathematics:
+	- HPM_vector_mathematics
+	- HPM_matrix_mathematics
+	- HPM_get_integrate
+	- HPM_project_from3Dto2D
+
+HPM_stagnation:
+	- HPM_find_stagnation
+	- HPM_calculate_stagnation
+	- HPM_calculate_stagnation_heating
+	- HPM_assign_stagnation
+
+HPM_numerics:
+	- HPM_separate_centroids
+	- HPM_determine_dt
+	- HPM_find_velocities
+	- HPM_vertex_values
+	- HPM_surfvel_fit
+	- HPM_backtracing_numerics
+
+HPM_viscous:
+	- HPM_solve_viscous_thermodynamics 
+	- HPM_solve_eckert
+
+HPM_transform_mesh:
+	- HPM_transform_mesh_alpha
+	- HPM_transform_mesh_beta
+	- HPM_transform_mesh_scale
+
+The general modules and module settings (e.g. for displaying of matplotlib) are in HPM_import.
