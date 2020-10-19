@@ -1,3 +1,16 @@
+# This code if a part of the HPM library for rapid hypersonic modelling. 
+# Heads up! This software most likely still contains errors. 
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_BACKTRACE_MARCHDOWN.py: this module is responsible for setting up of the environment for backtracing and marchdown. 
+# It is called directly from HPM_main and contains all viscous procedures and writing of the results. 
+# Note that for its operation, the inviscid data has to be already generated and correctly processed.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
 from HPM_import import *
 from HPM_process_mesh import *
 from HPM_get_thermodynamics import *

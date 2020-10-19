@@ -1,3 +1,16 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_integrate.py: here, the functions used for integration purposes are defined.
+# RK4_3D is not currently in used.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 
 

@@ -1,3 +1,18 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_separate_centroids.py: this module is responsible for separating the elements based on their x direction.
+# This is done to speed up the backtracing process (when locating in which element we are currently residing to compute velocity). 
+# Depending on the geometry, this can be also re-written for y and z axes (for y-axis and z-axis dominant geometries).
+# If modified, the find_velocity -ordered method has to be also adjusted accordingly. 
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_mathematics import *
 

@@ -1,3 +1,13 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_INVISCID.py: this module is responsible for processing the mesh and computing the inviscid pressure distribution and thermodynamics.  
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
 from HPM_import import *
 from HPM_process_mesh import *
 from HPM_transform_mesh import *

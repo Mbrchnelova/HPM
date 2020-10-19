@@ -1,3 +1,15 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_get_velocities.py: this function computes the surface (inviscid) velocities. 
+# They are determined from the pressure field, freestream conditions and projection onto the surface.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
 from HPM_import import *
 from HPM_mathematics import *
 from HPM_SETUP import *

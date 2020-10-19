@@ -1,3 +1,16 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_get_transition.py: this function determines whether the flow has transitioned or not.
+# Three conditions are currently implemented - Re(x) based (user), x-based (user) and ReT based.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 
 

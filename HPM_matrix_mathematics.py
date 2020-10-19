@@ -1,4 +1,13 @@
-# This module includes some basic matrix operations
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_matrix_mathematics.py: in this module, all functions which deal with basic matrix operations are defined.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
 
 from numpy.linalg import inv
 import numpy as np

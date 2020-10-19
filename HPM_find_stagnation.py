@@ -1,3 +1,17 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_find_stagnation: this module contains functions which help determine which node is the stagnation point. 
+# Based on user's input, this is currently done based on either tracing the front-most point (geometrically) or from pressure.
+# Note that due to the fact that pressure is element-resolved, calculation from pressure cannot be completely accurate.
+# For coarse geometries and geometries with one stagnation region only, geometry-based calculation is thus preferred.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
 from HPM_import import *
 
 

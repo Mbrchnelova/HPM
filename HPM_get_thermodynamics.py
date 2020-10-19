@@ -1,3 +1,16 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_get_thermodynamics.py: this function computes the "inviscid thermodynamics" from the pressure and velocity field.
+# The thermodynamic variables (temperature, density, viscosity) are computed at the node locations.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_mathematics import *
 from HPM_SETUP import *

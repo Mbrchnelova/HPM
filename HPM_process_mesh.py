@@ -1,3 +1,18 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_process_mesh.py: here, the main mesh process for .ply files is defined.
+# Additional one may be added to handle other than ply formats. 
+# If an additional mesh processer is added, the outputs must be the same. 
+# The inputs must be at least the node coordinates, connectivity and the directions of the outward normals.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 
 def process_mesh(filename, VERIFY):

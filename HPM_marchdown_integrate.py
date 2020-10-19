@@ -1,3 +1,17 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_marchdown_integrate.py: the function here defined is responsible for downstream marching.
+# The data from backtracing are used to integrate the BL thickness and resolve the heating and skin friction down back to the original node.
+# The writing of the results here is also invoked.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_mathematics import *
 from HPM_numerics import *

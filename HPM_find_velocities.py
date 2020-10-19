@@ -1,3 +1,17 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_find_velocities.py: this module contains function to determine the local velocity while backtracing.
+# Either the centroid-ordering has been performed - then use is made of FindVelVectorOrdered. 
+# Otherwise, the slower FindVelVectorNotOrdered should be implemented.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_mathematics import *
 

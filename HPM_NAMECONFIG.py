@@ -1,3 +1,13 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_NAMECONFIG.py: this module configures the names of the input/ output files where data from processing and results are stored.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
 from HPM_SETUP import *
 from HPM_write import *
 

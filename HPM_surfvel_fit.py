@@ -1,3 +1,16 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_surfvel_fit.py: this module creates the surface and velocity fitting functions for the Hamiltion metric method.
+# This has to be used in combination with the C++ scripts to determine the fitting coefficients and nullspaces!
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_mathematics import *
 

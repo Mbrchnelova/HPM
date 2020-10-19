@@ -1,3 +1,16 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_get_initial_metric.py: this module contains all the function necessary to compute the initial metric coefficients for the Hamilton method.
+# Right now, the Hamilton method is not preferred since it takes longer and oftentimes has convergence problems compared to Parzhikar. 
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_numerics import *
 from HPM_mathematics import *

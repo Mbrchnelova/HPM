@@ -1,3 +1,17 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_detect_irrelevant.py: this function distinguishes which nodes should not be computed (here e.g. based on Cp).
+# This can be adjusted based on user's wish (e.g. geometry based constraints).
+# Correct detection allows acceleration of backtracing and marching down. 
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 
 

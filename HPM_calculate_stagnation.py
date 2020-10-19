@@ -1,3 +1,14 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_calculate_stagnation.py: here, the conditions right behind the NSW are computed (not at the nose directly!)
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
 from HPM_import import *
 from HPM_SETUP import *
 

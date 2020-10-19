@@ -1,14 +1,21 @@
 Welcome to the hypersonic pretty-damn-quick modelling library! 
-Originally, HPM comes from the honours programme, master abbreviation, but I thought I could give it a new meaning now that I am done with that.
+
+Originally, the abbreviation of HPM comes from the honours programme, master's degree, but I thought I could give it a new meaning now that I am done with that.
 For now, only the version for a single stagnation point is uploaded (the other will be added in the coming weeks, I am still working on some better interfaces for that). 
 
 
-The program can be run from the shell with any python compiler, but the matplotlib might not function properly.
-For functioning with matplotlib, it is best to run the program from anaconda/ spyder/ etc., so that the results can be displayed well.
+The program can be run from the shell with any python compiler, but the matplotlib might not function properly if e.g. run from the terminal.
+For proper functioning with matplotlib, it is best to run the program from anaconda/ spyder/ etc., so that the results can be displayed well.
 
 The HPM_main is a simple import code, but by importing of the modules, they are being executed. 
 
+Keep in mind that there are still likely many mistakes and errors/ insufficient error handles in the code.
+If you spot something that can be improved (which is not that hard), feel free to send me a suggestion or a question regarding it.
 
+Please also keep in mind that sometimes function names might be misleading, as originally they were inteded to do something else.
+Then, they might have been rewritten to do something more fitting for their placement in the code.
+If the name of the function does not seem to correspond to its definition/ outputs, please first check how it is implemented before reporting a mistake.
+In time, I will try to fix all such misnamings. 
 
 
 Some modules are included in module groups to simplify the import processes. The hierarchy is below:
@@ -43,3 +50,5 @@ HPM_transform_mesh:
 	- HPM_transform_mesh_scale
 
 The general modules and module settings (e.g. for displaying of matplotlib) are in HPM_import.
+
+Questions? Asked at michaela.brchnelova@kuleuven.be. 

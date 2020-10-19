@@ -1,3 +1,18 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_vertex_values.py: this module contains function to extrapolate element data onto the nodes.
+# Two methods are present; the first one uses inverse-distance weighing and while being accurate, it is extremely slow.
+# The other method only uses the neighbouring elements for extrapolation. 
+# The use of the second method is recommended as it is order of magnitude faster (no nested for loops). 
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_mathematics import *
 

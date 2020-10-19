@@ -1,3 +1,16 @@
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_solve_viscous_thermodynamics.py: here, all functions required during marching down to compute the local thermodynamics are defined.
+# These include the boundary layer momentum thickness and skin friction coefficient, depending on the flow state and Eckert's method.
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
+
+
 from HPM_import import *
 from HPM_numerics import *
 from HPM_mathematics import *

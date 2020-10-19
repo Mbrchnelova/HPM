@@ -1,4 +1,13 @@
-# This module contains a function which projects a 3D triangle (mesh element) onto a 2D plane
+# This code if a part of the HPM library for rapid hypersonic modelling.
+# Heads up! This software most likely still contains errors.
+# It is therefore distributed without warranty of merchantability.
+#
+#
+# HPM_project_from3Dto2D: this is a basic module used anytime a 3D mesh element is to be converted to a plane in 2D (e.g. velocity calculation).
+#
+# Developed/ made available:   19/10/2020 by M. Brchnelova
+# Questions?                   michaela.brchnelova@kuleuven.be
+
 
 from HPM_vector_mathematics import *
 from HPM_matrix_mathematics import *
