@@ -15,3 +15,4 @@ from HPM_find_velocities import *
 from HPM_vertex_values import *
 from HPM_surfvel_fit import *
 from HPM_backtracing_numerics import *
+from HPM_interpolate import *
