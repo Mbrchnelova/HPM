@@ -44,7 +44,7 @@ def process_mesh(filename, VERIFY):
     areas = []
 
     for line in alllines:
-        if len(line) == 6:
+        if len(line) >= 6:
             nodes.append([float(line[0]), float(line[1]), float(line[2])])
             normals_nodes.append([float(line[3]), float(line[4]), float(line[5])])
 

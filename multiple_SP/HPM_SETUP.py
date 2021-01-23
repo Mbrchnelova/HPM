@@ -24,6 +24,7 @@ path = '/scratch/leuven/338/vsc33811/HPM_soft/HPM_results/testresults/'					#The
 INVSCID                                         = 1				#If selected, the Newton calculation and mesh processing will take place
 CHECK_MESH                                      = 1				#If selected, the loaded mesh will be displayed (without transformations)
 VERIFY_NEWTON                                   = 1				#If selected, the Newton results will be displayer (after transformations)
+VERIFY_LEPS                                     = 1
 
 USE_IDS                                         = 0				#Use inverse distance weighing. More precise but takes a very long time.
 VERIFY_ISD_NODES                                = 0				#If using inverse distance weighing, the process will be displayed for verification
@@ -34,6 +35,8 @@ WRITE_FIELDS                                    = 1				#Save the information fro
 
 
 #########VISCOUS PART
+OVERRIDE_EPSILON                                = 1
+
 VISCOUS                                         = 1				#If selected, viscous calculations will take place (inviscid data required!)
 
 VERIFY_NODE_RELEVANCE                           = 0				#There if a function to recognise nodes in shadow to be ignored. This displays these nodes.

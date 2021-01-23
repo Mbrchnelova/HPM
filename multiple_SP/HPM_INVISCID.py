@@ -152,6 +152,8 @@ if INVSCID:
     Thermo_all = xLEPThermo + yLEPThermo + zLEPThermo
    
     if VERIFY_LEPS:
+        VERIFY_LEPS = False
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
         c = np.array(Cps)
@@ -176,7 +178,7 @@ if INVSCID:
 
         for i in range(0, len(filtered_SPs)):
             ax.scatter(filtered_SPs[i][0], filtered_SPs[i][1], filtered_SPs[i][2], s=20, c = 'k')
-
+        '''
     print len(LEPs_all), "LEP found. Check on the Figure whether they are relevant. Computing their thermodynamics..."
 
 
