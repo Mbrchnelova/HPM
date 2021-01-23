@@ -86,6 +86,7 @@ def GetVelocities(V_vector, normals, centroids, Cps, pinf, Minf, Tinf, gamma, R,
                 v_vel_mag.append(velocities[c][1])
                 w_vel_mag.append(velocities[c][2])
 
+	'''
         fig = plt.figure()
         ax = Axes3D(fig)
         c = np.array(u_vel_mag)
@@ -118,6 +119,6 @@ def GetVelocities(V_vector, normals, centroids, Cps, pinf, Minf, Tinf, gamma, R,
         ax.set_ylabel('Y axis')
         ax.set_zlabel('Z axis')
         ax.set_title('W velocity on a cone using modified Newton technique')
-
+	'''
 
     return velocities, pressures

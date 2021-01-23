@@ -13,8 +13,8 @@ import math
 
 
 #########INPUT FILE MANAGEMENT
-name = "/Users/brch/HPM_geometries/geom2.ply"					#The name of the mesh file to be read
-path = '/Users/brch/HPM_results/geom_2/'					#The path to the results folder (does not need to exist a priori)
+name = "/scratch/leuven/338/vsc33811/HPM_soft/HPM_geometries/geom2.ply"					#The name of the mesh file to be read
+path = '/scratch/leuven/338/vsc33811/HPM_soft/HPM_results/testresults/'					#The path to the results folder (does not need to exist a priori)
 
 
 
@@ -82,15 +82,14 @@ scale = 0.5									#The scaling to transform the mesh
 #Transition settings
 INTERPOLATE_N = False                                                    	#For turbulent heating, either compute N (more accurate, less stable) = False or interpolate N = True
 OWN_TRANSITION_Re = 'nan'                                               	#User defined transition Re number (x-based)
-OWN_TRANSITION_x = 0.12                                               		#User defined transition coordinate (x-based)
+OWN_TRANSITION_x = 'nan'                                               		#User defined transition coordinate (x-based)
 OWN_TRANSITION = [OWN_TRANSITION_Re, OWN_TRANSITION_x]
 
 
-#User/ pre-set numericallimits
-max_x_user = 4.0                                                                #Distance beyond which the results are not desired (i.e too downstream to be relevant) for speedup
+#User/ pre-set numerical limits
+max_x_user = 1.e5                                                               #Distance beyond which the results are not desired (i.e too downstream to be relevant) for speedup
 beta_tol = 0.01                                                                 #Resolution for point cluttering on the epsilon line, for Hamilton
 dist_yz_min = 0.07                                                              #Min distance between two streamlines, for Perzhikar
-
 
 
 
@@ -101,10 +100,8 @@ process = subprocess.Popen(bashCmd.split(), stdout=subprocess.PIPE)
 
 output, error = process.communicate()
 
+#For checking
 print output
-
-
-
 
 
 V_vector = [1., 0., 0.]

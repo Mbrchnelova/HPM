@@ -29,6 +29,8 @@ def TraceStreamlinesBack(max_x_user, nodes, nodes_relevance, us, vs, ws, dt_end,
     threshold_vel = 0.
     #nodes = nodes[:33]
     if VERIFY:
+        VERIFY = False
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
         ax.set_xlabel('X axis')
@@ -36,6 +38,7 @@ def TraceStreamlinesBack(max_x_user, nodes, nodes_relevance, us, vs, ws, dt_end,
         ax.set_zlabel('Z axis')
         ax.set_title('Backtracing streamlines to SP from nodes')
         ax.scatter(stag_node[0], stag_node[1], stag_node[2], s=10, c = 'g')
+        '''
 
     #nodes = nodes[:17]
     for n in range(0, len(nodes)):
@@ -193,9 +196,11 @@ def TraceStreamlinesBack(max_x_user, nodes, nodes_relevance, us, vs, ws, dt_end,
                     coordinates = element_proj
 
                     if VERIFY:
+                        VERIFY = False
+                        '''
                         if nodes[n][0] < 1.0:                                  #Only these streamlines will be shown for clarity
                             ax.scatter(coordinates[0], coordinates[1], coordinates[2], s=2, c = 'k')
-
+                        '''
 
                     crossed = CrossedStagnationLine(coordinates, stag_node, epsilon)[0]
                     if crossed:
@@ -214,7 +219,10 @@ def TraceStreamlinesBack(max_x_user, nodes, nodes_relevance, us, vs, ws, dt_end,
                         coordinates = element_proj
 
                         if VERIFY:
+                            VERIFY = False
+                            '''
                             ax.scatter(coordinates[0], coordinates[1], coordinates[2], s=4, c = 'g')
+                            '''
 
                         nodes_resolved.append(coordinates)
                         nodes_resolved_idxs.append(n)

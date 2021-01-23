@@ -33,6 +33,7 @@ def FindInitialMetricCoefficientsCircle(betas, epsilon, epsilon_nodes, tol, VERI
             regions.append(betas[i])
    
     if VERIFY:
+        '''
         xs = []
         ys = []
         for i in range(0, len(regions)):
@@ -41,6 +42,7 @@ def FindInitialMetricCoefficientsCircle(betas, epsilon, epsilon_nodes, tol, VERI
             ys.append(y)
         plt.scatter(xs, ys, c = 'k')
         plt.show()
+        '''
 
     temp_regions = []
    

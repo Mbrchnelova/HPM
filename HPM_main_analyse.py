@@ -42,20 +42,71 @@ conditions = []
 
 
 for i in range(1, 28):
-	path = "./Output/" + str(i)
+	
+	path_def = "./Output/" + str(i) + "/"
 	for j in range(1, 9):
-		path = path + "out0" + str(j) + ".gnu"
-		conditions = HPM_read_gnu_data(path)
-		heights = conditions[1]
-		flight_paths = conditions[5]
-		headings = conditions[6]
-		velocities = conditions[4]
+		path = ""
+		path = path_def + "out0" + str(j) + ".gnu"
+		conditions = read_gnu_data(path)
+
+		heights = []
+		flight_paths = []
+		headings = []
+		velocities = []
+		number_of_entries = len(conditions)
+		for k in range(0, number_of_entries):
+			heights.append(conditions[k][1])
+			flight_paths.append(conditions[k][5])
+			headings.append(conditions[k][6])
+			velocities.append(conditions[k][4])
 
 		number_of_entries = len(heights)
 
+		print "heights: ", heights
 		for k in range(0, number_of_entries):
 
-			
+			# Below are the default conditions same for all simulations
+			dt = 0.00001
+			epsilon = 0.05 
+			IDWP = 4.
+			T_w = 300.
+			cp = 1000.6
+        	        kap = 0.02435
+			V_vector = [1., 0., 0.] 
+ 
+			gamma = 1.4
+			R = 287.05
+
+			scale = 1.0
+
+			# Next, the freestream conditions are found using ISA
+			height = heights[k] * 1000. # conversion to meters
+			pinf, Tinf, rhoinf, muinf = ISA_from_height(height)
+
+			ainf = math.sqrt(gamma * R * Tinf)
+			Mach = velocities[k] / ainf
+
+			# Finally, the heading and flight path angle is transformed into AOA and Beta
+			V_E = [velocities[k], 0, 0]
+			flight_path_angle = flight_paths[k] * math.pi/180. # conversion to rad
+			heading_angle = headings[k] * math.pi/180. #conversion to rad
+			bank_angle = 0.0
+			V_a, alpha, beta = FE_to_Fa(V_E, heading_angle, flight_path_angle, bank_angle)			
+
+
+			# Balistic flight
+			alpha = alpha * 0.0
+			beta = beta * 0.0
+
+			print "Running simulation: "
+			print "H: ", height/1000., "km, V: ", V_E, "m/s, Mach: ", Mach, " AOA: ", alpha * 180./math.pi, "deg, BETA: ", beta * 180./math.pi, "deg."
+			infile = "/Users/brch/HPM_geometries/geom" + str(i) + ".ply"
+			outfile = "/Users/brch/HPM_results/geom_" + str(i) + "_" + str(j) + "_" + str(k) +  "/"
+
+			OVERWRITE_SETUP = True 
+			from HPM_INVISCID import *
+			from HPM_BACKTRACE_MARCHDOWN import *
+
 
 #for i in range(1, 28):
 
@@ -74,8 +125,8 @@ for i in range(1, 28):
 #       		outfile.append("/Users/brch/HPM_results/geom_" + str(i) +  "/" )
 
 
-from HPM_INVISCID import *
-from HPM_BACKTRACE_MARCHDOWN import *
+#from HPM_INVISCID import *
+#from HPM_BACKTRACE_MARCHDOWN import *
 
 
 

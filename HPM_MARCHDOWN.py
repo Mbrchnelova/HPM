@@ -97,8 +97,9 @@ if VISCOUS:
     final_xs_q.append(stag_point[0])
     final_ys_q.append(stag_point[1])
     final_zs_q.append(stag_point[2])
+  
 
-
+    '''
     fig = plt.figure()
     ax = Axes3D(fig)
     cax = fig.add_axes([0.825, 0.1, 0.05, 0.8])
@@ -118,7 +119,7 @@ if VISCOUS:
     fig = plt.figure()
     ax = Axes3D(fig)
     cax = fig.add_axes([0.825, 0.1, 0.05, 0.8])
-
+    '''
     for k in range(0, len(final_xs_q)-1):
         dist_to_stag_point = ((final_xs_q[k] - final_xs_q[-1])**2 + (final_ys_q[k] - final_ys_q[-1])**2 + (final_zs_q[k] - final_zs_q[-1])**2)**0.5
         if final_values_dotqws[k] > qstag:
@@ -128,6 +129,7 @@ if VISCOUS:
         else:
             final_values_dotqws[k] /= 10000.
 
+    '''
     c = np.array(final_values_dotqws)
     p = ax.scatter(final_xs_q, final_ys_q, final_zs_q, s=5, c = c)
     ax.scatter(final_xs_q[-1], final_ys_q[-1], final_zs_q[-1], s=100, c = 'r')
@@ -162,7 +164,7 @@ if VISCOUS:
     ax.set_ylabel('Y axis')
     ax.set_zlabel('Z axis')
     ax.set_title('Theta integral term along a cone, final values only')
-   
+    '''
    
     nodes_final_dotq = []
     for i in range(0, len(final_xs_q)):

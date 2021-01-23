@@ -77,6 +77,7 @@ def Newton(nodes, connectivity, normals, centroids, areas, gamma, V_vector, Mach
     #print Cp_max
 
     if VERIFY:
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
         c = np.array(Cps)
@@ -89,6 +90,7 @@ def Newton(nodes, connectivity, normals, centroids, areas, gamma, V_vector, Mach
         ax.set_zlabel('Z axis')
         ax.set_title('Cp on a cone using modified Newton technique')
         ax.axes.set_aspect('equal')
+        '''
 
     return Cps, shadowed
 

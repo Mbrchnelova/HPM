@@ -12,7 +12,7 @@
 
 
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import math
 import numpy as np
@@ -62,7 +62,7 @@ for i in range(0, len(nodes_thetas)):
     final_ys.append(nodes_thetas[i][1])
     final_zs.append(nodes_thetas[i][2])
 
-
+'''
 fig = plt.figure()
 ax = Axes3D(fig)
 cax = fig.add_axes([0.825, 0.1, 0.05, 0.8])
@@ -88,3 +88,5 @@ ax.set_xlabel('X axis')
 ax.set_ylabel('Y axis')
 ax.set_zlabel('Z axis')
 ax.set_title('Dotqws along a cone, final values only, W/cm2')
+'''
+

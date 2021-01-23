@@ -69,6 +69,7 @@ def GetThermodynamics(ps, Minf, nodes, gamma, R, muinf, Tinf, rhoinf, VERIFY):
             y_coords_ele.append(nodes[n][1])
             z_coords_ele.append(nodes[n][2])
 
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
         c = np.array(T_nodes)
@@ -102,5 +103,6 @@ def GetThermodynamics(ps, Minf, nodes, gamma, R, muinf, Tinf, rhoinf, VERIFY):
         ax.set_ylabel('Y axis')
         ax.set_zlabel('Z axis')
         ax.set_title('mu of nodes on a cone using modified Newton technique')
+        '''
 
     return T_nodes, mu_nodes, rho_nodes, M_nodes

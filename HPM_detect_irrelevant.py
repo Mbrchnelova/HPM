@@ -28,6 +28,7 @@ def DetectIrrelevantNodes(nodes, p_nodes, pinf, Minf, gamma, VERIFY):
             relevant_nodes.append(0)
             
     if VERIFY:
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
         for n in range(0, len(nodes)):
@@ -38,6 +39,7 @@ def DetectIrrelevantNodes(nodes, p_nodes, pinf, Minf, gamma, VERIFY):
         ax.set_ylabel('Y axis')
         ax.set_zlabel('Z axis')
         ax.set_title('Irrelevant nodes detected')
+        '''
     return relevant_nodes    
 
 

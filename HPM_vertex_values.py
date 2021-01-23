@@ -38,6 +38,7 @@ def GetVertexValues(nodes, centroids, centroid_values, p, VERIFY):
             print 'Node number...:', n,
 
     if VERIFY:
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
 
@@ -58,6 +59,7 @@ def GetVertexValues(nodes, centroids, centroid_values, p, VERIFY):
         ax.set_ylabel('Y axis')
         ax.set_zlabel('Z axis')
         ax.set_title('Node resolved from the ISD centroid interpolation')
+        ''' 
     return values_nodes
 
 

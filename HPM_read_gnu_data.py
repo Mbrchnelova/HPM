@@ -22,7 +22,7 @@ def read_gnu_data(path):
 	for j in range(0, no_lines):
 		line = (lines[j]).split()
 		for i in range(0, line_length):
-			print line[i]
+			#print line[i]
 			data[j][i] = float(line[i])
 			
 	return data

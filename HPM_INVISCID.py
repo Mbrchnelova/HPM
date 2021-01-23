@@ -111,12 +111,15 @@ if INVSCID:
         stag_points, stag_ps, stag_idxs = FindStagnationPointFromPressure(nodes, p_nodes)                 #CURRENTLY ONLY WORKS FOR ONE STAGNATION POINT, MUST BE REDONE IN CASE OF A WINGED GEOMETRY
 
     if VERIFY_STAG_POINT:
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
-
+        ''' 
     for stag_point in stag_points:
+        '''
         if VERIFY_STAG_POINT:
             ax.scatter(stag_point[0], stag_point[1], stag_point[2], s=10, c = 'r')
+        '''
 
         p_nodes, T_nodes, mu_nodes, rho_nodes, u_nodes, v_nodes, w_nodes = AssgnStagnationPoint(stag_point, nodes, Mach, pinf, rhoinf, Tinf, p_nodes, rho_nodes, T_nodes, mu_nodes, u_nodes, v_nodes, w_nodes, VERIFY_STAG_POINT)
 
