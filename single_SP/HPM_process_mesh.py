@@ -44,7 +44,7 @@ def process_mesh(filename, VERIFY):
     areas = []
 
     for line in alllines:
-        if len(line) >= 6:
+        if len(line) == 6:
             nodes.append([float(line[0]), float(line[1]), float(line[2])])
             normals_nodes.append([float(line[3]), float(line[4]), float(line[5])])
 
@@ -124,6 +124,8 @@ def process_mesh(filename, VERIFY):
     #RETURN node coordinates, node connectivity, element normals, element centroids, element areas
 
     if VERIFY:
+        VERIFY = False
+        '''
         fig = plt.figure()
         ax = Axes3D(fig)
 
@@ -151,6 +153,7 @@ def process_mesh(filename, VERIFY):
         z_coords_neigh_check = [nodes[t_check[0]][2], nodes[t_check[1]][2], nodes[t_check[2]][2], nodes[t_check[3]][2], nodes[t_check[4]][2], nodes[t_check[5]][2]]
 
         ax.scatter(x_coords_neigh_check, y_coords_neigh_check, z_coords_neigh_check, s=15, c = 'r')
+        '''
 
     return[nodes, connectivity, normals, centroids, areas]
 
